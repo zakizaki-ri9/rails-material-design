@@ -1,24 +1,19 @@
-# README
+# Railsで作るマテリアルデザイン
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- URL: https://rails-materialize-portforio.herokuapp.com/
 
-Things you may want to cover:
+## 概要
 
-* Ruby version
+- gem `materialize-sass`を利用して作る簡易ポートフォリオサイト
 
-* System dependencies
+## 目的
 
-* Configuration
+- 改めてRailsで作るWebサイトの基礎を身につける。（とくにフロント周り）
+  - バックエンドはある程度実装することができるが、フロント周りは弱いのでそれを補う。
+  - Bootstrap以外のフレームワークを使ってみる。
 
-* Database creation
+## 説明
 
-* Database initialization
+### favicon設定
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 使用したサイト: [favicon generator](https://ao-system.net/favicongenerator/)

@@ -8,17 +8,42 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    nav
+    header
+      nav
+        .container
+          .nav-wrapper
+            a.brand-logo.right(href='#') Zaki App
+            ul#nav-mobile.left.hide-on-med-and-down
+              li
+                = link_to 'home', root_path
+              li
+                = link_to 'about', about_path
+              li
+                = link_to 'new course', courses_new_path
+    main
       .container
-        .nav-wrapper
-          a.brand-logo.right(href='#') Zaki App
-          ul#nav-mobile.left.hide-on-med-and-down
-            li
-              = link_to 'home', root_path
-            li
-              = link_to 'about', about_path
-            li
-              = link_to 'new course', courses_new_path
-
-    .container
-      = yield
+        = yield
+    footer.page-footer
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Zaki App
+            p.grey-text.text-lighten-4 Portfolio Prototype.
+          .col.l4.offset-l2.s12
+            h5.white-text Links
+            ul
+              li
+                a.grey-text.text-lighten-3(
+                  href='https://kic-yuuki.hatenablog.com/'
+                ) Blog
+              li
+                a.grey-text.text-lighten-3(
+                  href='https://qiita.com/zaki_zaki'
+                ) Qiita
+              li
+                a.grey-text.text-lighten-3(
+                  href='https://note.mu/zucky_zakizaki'
+                ) Note
+      .footer-copyright
+        .container
+          | © 2019 Copyright zaki(zakizaki-ri9)
