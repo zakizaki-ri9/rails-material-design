@@ -8,7 +8,14 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = link_to 'home', root_path, { style: "margin-right: 5px;" }
-    = link_to 'about', about_path, { style: "margin-right: 5px;" }
-    = link_to 'new_course', courses_new_path
+    nav
+      .nav-wrapper
+        a.brand-logo.right(href='#') Logo
+        ul#nav-mobile.left.hide-on-med-and-down
+          li
+            = link_to 'home', root_path
+          li
+            = link_to 'about', about_path
+          li
+            = link_to 'new course', courses_new_path
     = yield
