@@ -2,20 +2,23 @@ doctype html
 html
   head
     title
-      | RailsUnivApp
+      | Zaki App
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     nav
-      .nav-wrapper
-        a.brand-logo.right(href='#') Logo
-        ul#nav-mobile.left.hide-on-med-and-down
-          li
-            = link_to 'home', root_path
-          li
-            = link_to 'about', about_path
-          li
-            = link_to 'new course', courses_new_path
-    = yield
+      .container
+        .nav-wrapper
+          a.brand-logo.right(href='#') Zaki App
+          ul#nav-mobile.left.hide-on-med-and-down
+            li
+              = link_to 'home', root_path
+            li
+              = link_to 'about', about_path
+            li
+              = link_to 'new course', courses_new_path
+
+    .container
+      = yield
