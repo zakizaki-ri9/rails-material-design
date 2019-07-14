@@ -1,3 +1,4 @@
+# typed: true
 class CoursesController < ApplicationController
 
   def index
