@@ -1,3 +1,4 @@
+# typed: true
 class PagesController < ApplicationController
 
   def about
